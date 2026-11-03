@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:prb.methoden.tafels.wpf"
         mc:Ignorable="d"
-        Title="Methoden-Tafels" Height="450" Width="731">
+        Title="Methoden-Tafels" Height="450" Width="731" Loaded="Window_Loaded">
     <Grid>
         <WrapPanel x:Name="wrpLeft" Margin="0" Width="150" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" HorizontalAlignment="Left" >
             <Label Content="De tafels" Margin="30,10,0,0" Width="72" FontWeight="Bold"/>
