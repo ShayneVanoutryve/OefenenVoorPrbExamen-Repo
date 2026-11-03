@@ -1,0 +1,25 @@
+﻿<Window x:Class="prb.methoden.tafels.wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prb.methoden.tafels.wpf"
+        mc:Ignorable="d"
+        Title="Methoden-Tafels" Height="450" Width="731">
+    <Grid>
+        <WrapPanel x:Name="wrpLeft" Margin="0" Width="150" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" HorizontalAlignment="Left" >
+            <Label Content="De tafels" Margin="30,10,0,0" Width="72" FontWeight="Bold"/>
+            <ListBox x:Name="lstTables" Height="263" Width="59" Margin="30,10,0,0" />
+        </WrapPanel>
+        <WrapPanel x:Name="wrpRight" HorizontalAlignment="Left" Height="419" Margin="150,0,0,0" VerticalAlignment="Top" Width="573" Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}">
+            <Label x:Name="lblTable" Content="0" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
+            <Label Content="X" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblMultiplier" Content="0" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
+            <Label Content="=" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtAnswer" HorizontalAlignment="Left" Height="23" Margin="20,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+            <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="53" Height="23" />
+            <ListBox x:Name="lstFeedBack" HorizontalAlignment="Left" Height="390" Margin="20,20,0,0" VerticalAlignment="Top" Width="247"/>
+
+        </WrapPanel>
+    </Grid>
+</Window>
