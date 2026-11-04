@@ -22,6 +22,7 @@ namespace Prb.TrafficLights.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -29,10 +30,35 @@ namespace Prb.TrafficLights.Wpf
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            GenerateNumbers();
+        }
+        void GenerateNumbers()
+        {
+            Random random = new Random();
+            int number = random.Next(1, 4);
+            if (number == 1)
+            {
+                lblInfo.Background = Brushes.Orange;
+                lblInfo.Content = "ORANJE Als het veilig kan, zou je nu best stoppen";
+                SetTrafficLightImagePath("verkeer_oranje.png");
+            }
+            else if (number == 2)
+            {
+                lblInfo.Background = Brushes.Red;
+                lblInfo.Content = "ROOD Gooi onmiddellijk alles dicht";
+                SetTrafficLightImagePath("verkeer_rood.png");
+            }
+            else
+            {
+                lblInfo.Background = Brushes.Green;
+                lblInfo.Content = "GROEN Karren maar. Alles veilig";
+                SetTrafficLightImagePath("verkeer_groen.png");
+            }
         }
 
         private void BtnNext_Click(object sender, RoutedEventArgs e)
         {
+            GenerateNumbers();
         }
 
         private void SetTrafficLightImagePath(string fileName)

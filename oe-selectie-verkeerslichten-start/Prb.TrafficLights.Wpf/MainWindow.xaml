@@ -8,7 +8,7 @@
     <Grid>
         <Label x:Name="lblInfo" Content="Label" HorizontalAlignment="Left" Margin="163,50,0,0" VerticalAlignment="Top" Background="#FFE8BD2D" Height="63" Width="535"/>
         <Button x:Name="btnNext" Content="Op naar de volgende" HorizontalAlignment="Left" Margin="163,134,0,0" VerticalAlignment="Top" Width="231" Height="44" Click="BtnNext_Click"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="278" Margin="34,50,0,0" VerticalAlignment="Top" Width="100">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="234" Margin="34,50,0,0" VerticalAlignment="Top" Width="100">
             <Image x:Name="imgTrafficLight" HorizontalAlignment="Left"  Margin="5,5,5,5" VerticalAlignment="Top"  />
         </Border>
 
