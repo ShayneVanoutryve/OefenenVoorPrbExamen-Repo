@@ -153,6 +153,13 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Alle rugnummers:" />
+        <Button Content="Controleer selectie"
+                Width="264"
+        Height="30"
+        Margin="0,0,156,504"
+        HorizontalAlignment="Right"
+        VerticalAlignment="Bottom"
+        Click="BtnCheckSelection_Click"/>
 
     </Grid>
 </Window>

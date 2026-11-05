@@ -104,11 +104,11 @@ private void UpdateReservesNextGameListbox()
 ## Uitdaging
 Zin in een uitdaging? Voorzie dan dit nog in je uitwerking:
 - Een opstelling kan maar uit maximum 11 spelers bestaan
-- Er kunnen maar maximum 7 spelers als reserve meegenomen worden
+- Er kunnen minimum 7 maximum 9 spelers als reserve meegenomen worden
 - Controlleer de input van de gebruiker;
 	- is er wel een naam ingevuld
 	- is er wel een (uniek) rugnummer ingevuld
-- Voorzie bij het opstarten van de applicatie al een aantal spelers met rugnummers
+- Voorzie bij het opstarten van de applicatie de starting 11 met bijhorende rugnummers van club brugge
 
 ## Live voorbeeld
 ![](images/image-01.gif)
