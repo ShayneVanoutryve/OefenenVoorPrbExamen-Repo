@@ -1,0 +1,158 @@
+﻿<Window
+    x:Class="Prb.Oe.Dictionaries.Soccerteam.Wpf.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Prb.Oe.Dictionaries.Soccerteam.Wpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Soccerteam manager"
+    Width="1027"
+    Height="766"
+    Loaded="Window_Loaded"
+    mc:Ignorable="d">
+    <Grid>
+        <TextBox
+            x:Name="txtPlayerName"
+            Width="152"
+            Margin="10,36,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Margin="10,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Naam en voornaam speler:" />
+        <Button
+            x:Name="btnAddPlayerToTeam"
+            Width="152"
+            Margin="10,117,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnAddPlayerToTeam_Click"
+            Content="Voeg toe aan het team" />
+        <TextBox
+            x:Name="txtPlayerNumber"
+            Width="152"
+            Margin="10,86,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Margin="10,60,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Rugnummer:" />
+        <ListBox
+            x:Name="lstTeam"
+            Margin="338,36,460,355"
+            IsEnabled="False" />
+        <Label
+            Margin="338,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Alle namen:" />
+        <ListBox
+            x:Name="lstTeamNextGame"
+            Margin="192,390,605,72"
+            SelectionChanged="LstTeamNextGame_SelectionChanged" />
+        <Label
+            Margin="192,364,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Opstelling volgende wedstrijd:" />
+        <ListBox
+            x:Name="lstReserveNextGame"
+            Margin="452,390,345,72"
+            SelectionChanged="LstReserveNextGame_SelectionChanged" />
+        <Label
+            Margin="452,364,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Reservespelers volgende wedstrijd:" />
+        <Label
+            Margin="601,99,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Naam:" />
+        <Label
+            Margin="601,127,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Rugnummer:" />
+        <Button
+            x:Name="btnAddPlayerToTeamNextGame"
+            Width="264"
+            Margin="607,156,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnAddPlayerToTeamNextGame_Click"
+            Content="Voeg toe aan opstelling" />
+        <Button
+            x:Name="btnAddPlayerToReserveNextGame"
+            Width="264"
+            Margin="607,181,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnAddPlayerToReserveNextGame_Click"
+            Content="Voeg toe aan reservespelers" />
+        <Button
+            x:Name="btnRemovePlayerFromTeamNextGame"
+            Width="230"
+            Margin="192,644,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnRemovePlayerFromTeamNextGame_Click"
+            Content="Verwijder speler uit opstelling" />
+        <Button
+            x:Name="btnMovePlayerToReserveNextGame"
+            Width="230"
+            Margin="192,669,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnMovePlayerToReserveNextGame_Click"
+            Content="Verplaats speler naar reserves" />
+        <Button
+            x:Name="btnRemovePlayerFromReserveNextGame"
+            Width="230"
+            Margin="452,644,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnRemovePlayerFromReserveNextGame_Click"
+            Content="Verwijder speler uit reserves" />
+        <Button
+            x:Name="btnMovePlayerToTeamNextGame"
+            Width="230"
+            Margin="452,669,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnMovePlayerToTeamNextGame_Click"
+            Content="Verplaats speler naar opstelling" />
+        <Label
+            x:Name="lblPlayerName"
+            Width="187"
+            Margin="684,99,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="" />
+        <Label
+            x:Name="lblPlayerNumber"
+            Width="187"
+            Margin="684,127,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="" />
+        <ListBox
+            x:Name="lstTeamNumbers"
+            Margin="193,36,717,355"
+            SelectionChanged="LstTeamNumbers_SelectionChanged" />
+        <Label
+            Margin="193,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Alle rugnummers:" />
+
+    </Grid>
+</Window>

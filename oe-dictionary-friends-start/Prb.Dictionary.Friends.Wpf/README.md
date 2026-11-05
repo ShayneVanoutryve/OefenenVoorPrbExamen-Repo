@@ -8,9 +8,9 @@ De WPF applicatie bevat de volgende componenten.
 
 ![components](images/components.png)
 
-Bij het opstarten van de applicatie is de listbox lstFriends en het label lblFriendAge leeg.
+Bij het opstarten van de applicatie is de listbox lstFriends en het label lblAge leeg.
 
-Met btnAdd kun je een vriend toevoegen aan lstFriends. Als je dan een vriend selecteert in lstFriends verschijnt de gepaste tekst in lblFriendAge. Je mag er voor je initiële versie van uitgaan dat de leeftijd van de vriend gelijk is aan (2020 - geboortejaar).
+Met btnAdd kun je een vriend toevoegen aan lstFriends. Als je dan een vriend selecteert in lstFriends verschijnt de gepaste tekst in lblAge. Je mag er voor je initiële versie van uitgaan dat de leeftijd van de vriend gelijk is aan (2020 - geboortejaar).
 
 Wanneer er minstens 1 vriend staat in lstFriends is de knop btnRemove klikbaar, wanneer lstFriends leeg is, is btnRemove niet klikbaar.
 
