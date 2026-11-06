@@ -156,7 +156,7 @@
         <Button Content="Controleer selectie"
                 Width="264"
         Height="30"
-        Margin="0,0,156,504"
+        Margin="0,0,156,480"
         HorizontalAlignment="Right"
         VerticalAlignment="Bottom"
         Click="BtnCheckSelection_Click"/>
